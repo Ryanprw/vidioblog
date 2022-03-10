@@ -17,14 +17,13 @@ function VideoContainer({ data }) {
       <video
         onPlay={() => SetPlaying(true)}
         onPause={() => SetPlaying(false)}
-        className=" min-w-full min-h-full w-auto h-auto bg-cover"
+        className="min-w-full min-h-full w-auto h-auto bg-cover"
         controls
         src={data.videoSrc}
         id="mainVideo"
       ></video>
       <div
-        className="absolute top-0 left-0 z-10 w-full h-[40px] p-2
-            bg-gradient-to-b from-black to-transparent
+        className="absolute top-5 left-0 z-10 w-full h-[60px] py-4 px-3 bg-gradient-to-b from-black to-transparent
         "
         id="videoName"
       >

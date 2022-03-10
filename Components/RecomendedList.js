@@ -13,10 +13,8 @@ function RecomendedList({ imgSrc, videoName, artistName }) {
           <span className="block text-[12px] text-gray-500">{artistName}</span>
         </h3>
         <div className="flex items-center  mt-2">
-          <p className="text-[14px] font-bold text-gray-500">40:30</p>
-          <p className="text-[14px] font-bold text-gray-500 ml-6">
-            65,550 <span>views</span>
-          </p>
+          <p className="text-[14px] font-bold text-gray-500"></p>
+          
         </div>
       </div>
     </div>

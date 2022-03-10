@@ -46,8 +46,8 @@ export default function Home() {
   return (
     <div className="flex flex-col bg-mainBg w-screen h-screen overflow-hidden">
       <Head>
-        <title>Streame - Video Blog</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Xeon Tutorial | ZEPETO INDONESIA</title>
+        <link rel="" href="" />
       </Head>
 
       <Header />
@@ -56,22 +56,15 @@ export default function Home() {
         {/* Left Menu */}
         <div
           id="leftMenu"
-          className="sm:w-[6%] md:w-[10%] min-w-[60px] h-full flex flex-col items-center justify-evenly"
+          className="sm:w-[60px] min-w-[60px] md:w-[10%] h-full flex flex-col items-center justify-evenly"
         >
-          <Menu icon={<Dashboard />} name={"Dashboard"} />
-          <Menu icon={<VideogameAsset />} name={"Games"} />
-          <Menu icon={<LocalMovies />} name={"Movies"} />
-          <Menu icon={<Stream />} name={"Streamer"} />
-          <Menu icon={<TrendingUp />} name={"Statistics"} />
-          <Menu icon={<Chat />} name={"Messages"} />
-          <Menu icon={<Favorite />} name={"Favourite"} />
-          <Menu icon={<Logout />} name={"Logout"} last={true} />
+         
         </div>
 
         {/* Main Container */}
-        <div className="sm:w-[94%] md:w-[90%] h-full  flex flex-col">
+        <div className="sm:w-[calc(100%-60px)] md:w-[90%] h-full">
           {/* top  list */}
-          <div className="w-full h-[70%] max-h-[480px]  grid grid-cols-3 gap-2 p-2">
+          <div className="w-full h-[70%] max-h-[480px] grid grid-cols-3 gap-2 p-2">
             <div
               className="md:col-span-2 sm:col-span-6  rounded-lg overflow-hidden
               flex items-center justify-center
@@ -86,7 +79,7 @@ export default function Home() {
               id="recomendedList"
             >
               <p className="text-textColor text-[18px] font-bold my-2 px-2">
-                Recommended
+                Rekomendasi
               </p>
 
               {/* List item */}
@@ -105,7 +98,7 @@ export default function Home() {
                     <RecomendedList
                       imgSrc={data.imgSrc}
                       videoName={data.videoName}
-                      artistName={"Susan Stewart"}
+                      artistName={"XEONZEPETO"}
                     />
                   </div>
                 ))}
@@ -117,10 +110,8 @@ export default function Home() {
               className="flex overflow-x-scroll items-center scrollbar-none py-2"
               id="scrollContainer"
             >
-              {Data &&
-                Data.map((data) => (
-                  <Collection key={data.id} imgSrc={data.imgSrc} />
-                ))}
+              
+                
             </div>
           </div>
         </div>
